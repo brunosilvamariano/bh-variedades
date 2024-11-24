@@ -1,0 +1,58 @@
+:root {
+    /* Cores Primárias */
+    --primary-color: #4A90E2; /* Azul-claro */
+    --secondary-color: #50C878; /* Verde */
+  
+    /* Cores de Destaque */
+    --accent-color: #FFA500; /* Laranja */
+    --hover-color: #FFCC80; /* Laranja pastel para hover */
+  
+    /* Cores de Fundo */
+    --background-color: #F9F9F9; /* Fundo neutro claro */
+    --card-background: #FFFFFF; /* Fundo para cards/produtos */
+    --footer-background: #2D2D2D; /* Rodapé escuro */
+  
+    /* Cores de Texto */
+    --text-color: #333333; /* Texto principal */
+    --subtext-color: #555555; /* Texto secundário */
+  
+    /* Outros */
+    --border-color: #E0E0E0; /* Bordas */
+    --error-color: #FF4D4D; /* Vermelho para erros */
+  }
+  
+  
+* {
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    box-sizing: border-box;
+}
+body {
+    padding-top: 0px; /* Ajuste para header fixo */
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden; /* Impede o scroll horizontal */
+}
+html {
+    overflow-x: hidden;
+    font-size: 87.5%; /* Base de 14px */
+}
+/* Compensação do scroll para a altura do cabeçalho */
+section {
+    scroll-margin-top: 80px; /* Ajuste este valor conforme a altura do cabeçalho */
+}
+header {
+    background-color: var(--cor-menu);
+    top: 0; /* Fica fixo no topo */
+    width: 100%; /* Para garantir que ocupe toda a largura */
+    z-index: 1000; /* Coloque um z-index alto para ficar acima de outros elementos */
+}
+
+@media (max-width: 768px) {
+    section {
+        scroll-margin-top: 60px; /* Ajuste menor para dispositivos móveis */
+    }
+}
+/* MENU DE NAVEGAÇÃO NAV BAR */
